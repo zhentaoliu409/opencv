@@ -32,7 +32,7 @@ To set up the environment and run this project, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/zhentaoliu409/opencv.git
-   cd opencv/opencv
+   cd opencv
    ```
 
 2. Install the required libraries:
