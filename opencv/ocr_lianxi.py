@@ -4,7 +4,6 @@ import cv2
 import numpy as np
 import pytesseract
 from matplotlib import pyplot as plt, gridspec
-from paddle.distributed.fleet.fleet_executor_utils import origin
 from paddleocr import PaddleOCR
 from difflib import SequenceMatcher
 
