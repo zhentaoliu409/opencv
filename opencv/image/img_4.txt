@@ -1,0 +1,3 @@
+这是一个倾斜文本HELLO
+This is text
+shown rotation effect

@@ -1,0 +1,12 @@
+# Student Name: Zhentao liu
+# Student ID: 3160112
+
+# Assignment 1, Question 1
+
+print("Assignment 1, Question 1")
+cost_juice = float(input("enter the cost of fruit juice per ml : "))
+cost_liquor = float(input("enter the cost of liquor per ml : "))
+volume_cocktail = float(input("enter the volume of a cup of cocktail (in terms of ml) : "))
+total_cost = volume_cocktail * 0.75 * cost_juice + volume_cocktail * 0.25 * cost_liquor
+print("the cost of a cup of cocktail is : ", total_cost)
+print()

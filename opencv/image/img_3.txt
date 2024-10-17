@@ -1,0 +1,13 @@
+The proposed technique only requires the camera to observe a planar pattern shown at a few (at
+least two) different orientations. The pattern can be printed on a laser printer and attached to a "rea-
+sonable" planar surface (e.g., a hard book cover). Either the camera or the planar pattern can be moved
+by hand. The motion need not be known. The proposed approach lies between the photogrammet-
+ric calibration and self-calibration, because we use 2D metric information rather than 3D or purely
+implicit one. Both computer simulation and real data have been used to test the proposed technique,
+and very good results have been obtained. Compared with classical techniques. the proposed tech-
+nique is considerably mon flexible. Compared with self-calibration, it gains considerable degree of
+robustness. We believe the new technique advances 3D computer vision one step from laboratory
+environments to the real world.
+Note that Bill Triggs [22] recently developed a self-calibration technique from at least 5 views of
+a planar scene. His technique is more flexible than ours, but has difficulty to initialize. Liebowitz and
+Zisserman [14] described a technique of metric rectification for perspective images of planes using
