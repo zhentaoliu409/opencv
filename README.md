@@ -70,10 +70,6 @@ The system measures the following metrics:
 - **Recall**: The percentage of characters in the image that were correctly recognized.
 - **F1 Score**: A balance between precision and recall.
 
-| OCR Engine  | Precision (%) | Recall (%) | F1 Score (%) | Time (s) |
-|-------------|---------------|------------|--------------|----------|
-
-
 ## Results
 
 ### Example Outputs:
