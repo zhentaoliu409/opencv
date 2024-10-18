@@ -55,6 +55,7 @@ The image is preprocessed to improve text visibility by performing the following
 Contours of possible text blocks are identified using the Canny edge detector, followed by filtering and sorting of these contours to extract valid text regions. Skewed text blocks are corrected using Hough transforms.
 
 ### Running OCR
+There are some images with corresponding text files available in the images directory ( e.g. img_6.png, img_6.txt )
 You can run the system on a given image using the following script:
 
 ```bash
