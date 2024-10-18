@@ -10,6 +10,7 @@ This project implements text detection and Optical Character Recognition (OCR) f
 - [Usage](#usage)
 - [Performance Evaluation](#performance-evaluation)
 - [Results](#results)
+- [Notice](#notice)
 - [References](#references)
 
 ## Overview
@@ -84,6 +85,19 @@ The system measures the following metrics:
   - F1 Score: 90.33%
 
 PaddleOCR tends to outperform Tesseract in more complex images, particularly those with skewed or noisy text, while Tesseract is faster in clean environments.
+
+## Notice:
+
+In the process of experimentation, the following shortcomings have been identified:
+
+1. **Canny Edge Detection + Contour Detection:**
+   - While this combination can generally detect text contours, it is highly susceptible to noise. This results in a high demand for image preprocessing and poor robustness. In future iterations, the accuracy of text detection could be significantly improved by employing deep learning methods.
+
+2. **Morphological Operations:**
+   - Although these operations can enhance text contour features to some degree, they also introduce unavoidable distortions to the shape of the text. Furthermore, morphological operations applied to one image may not be easily transferable to other images, affecting their general applicability.
+
+3. **Image Distortion and Curved Text Correction:**
+   - Despite some initiatives taken to mitigate image distortion, this system does not yet address the correction of curled or curved text in spatial dimensions. This is an area for further study and improvement in future work.
 
 ## References
 - [PaddleOCR Documentation](https://github.com/PaddlePaddle/PaddleOCR)
