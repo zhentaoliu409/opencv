@@ -56,10 +56,17 @@ Contours of possible text blocks are identified using the Canny edge detector, f
 
 ### Running OCR
 There are some images with corresponding text files available in the images directory ( e.g. img_6.png, img_6.txt )
+To replace it, download the code and go to the end of the file and change it:
+
+```bash
+image = cv2.imread('image/img_2.png')
+txt_path = 'image/img_2.txt'
+```
+
 You can run the system on a given image using the following script:
 
 ```bash
-python ocr_lianxi.py --image/img_2.png --image/img_2.txt
+python ocr_lianxi.py 
 ```
 
 ### Performance Metrics
