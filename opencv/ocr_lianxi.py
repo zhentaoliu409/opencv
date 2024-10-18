@@ -315,15 +315,23 @@ def four_point_transform(image, rect):
 # Define function to automatically sort corner points in the order top left, top right, bottom right, bottom left
 def order_points(pts):
 
-    # Calculate the center of mass
-    center = np.mean(pts, axis=0)
+    # Sort the points based on their x-coordinates
+    x_sorted = pts[np.argsort(pts[:, 0]), :]
 
-    # Sort the four points by polar angle
-    rect = sorted(pts, key=lambda point: np.arctan2(point[1] - center[1], point[0] - center[0]))
+    # Get the left-most and right-most points
+    left_pts = x_sorted[:2, :]
+    right_pts = x_sorted[2:, :]
 
-    # Convert to numpy array
-    rect = np.array(rect, dtype="float32")
-    return rect
+    # Sort the left-most points based on their y-coordinates
+    left_pts = left_pts[np.argsort(left_pts[:, 1]), :]
+    top_left, bottom_left = left_pts
+
+    # Sort the right-most points based on their y-coordinates
+    right_pts = right_pts[np.argsort(right_pts[:, 1]), :]
+    top_right, bottom_right = right_pts
+
+    # Return the ordered coordinates
+    return np.array([top_left, top_right, bottom_right, bottom_left])
 
 # Define a function to resize images
 def img_resize(image):
